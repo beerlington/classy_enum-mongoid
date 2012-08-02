@@ -1,6 +1,6 @@
 # ClassyEnum::Mongoid
 
-TODO: Write a gem description
+[ClassyEnum](https://github.com/beerlington/classy_enum) is a Ruby on Rails gem that adds class-based enumerator functionality to model attributes. This adaptor works with Mongoid v2.1.0+
 
 ## Installation
 
@@ -18,12 +18,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+See the [ClassyEnum README](https://github.com/beerlington/classy_enum#readme)
+for documentation and usage examples.
 
-## Contributing
+## Copyright
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Copyright (c) 2012 [Peter Brown](https://github.com/beerlington). See LICENSE for details.
