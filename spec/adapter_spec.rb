@@ -13,14 +13,14 @@ end
 
 class AllowBlankBreedDog
   include Mongoid::Document
-  field :breed, type: String
-  classy_enum_attr :breed, :allow_blank => true
+
+  field :breed, type: Breed, :enum => {:allow_blank => true}
 end
 
 class AllowNilBreedDog
   include Mongoid::Document
-  field :breed, type: String
-  classy_enum_attr :breed, :allow_nil => true
+  
+  classy_enum_field :breed, :allow_nil => true
 end
 
 class OtherDog

@@ -21,6 +21,32 @@ Or install it yourself as:
 See the [ClassyEnum README](https://github.com/beerlington/classy_enum#readme)
 for documentation and usage examples.
 
+## Custom fields
+
+You can either use the Enum class as a Custom Mongoid field with serialization support using mongoize/demongoize and evolve support for searches. 
+
+```ruby
+class AllowBlankBreedDog
+  include Mongoid::Document
+
+  field :breed, type: Breed, :enum => {:allow_blank => true}
+end
+```
+
+Or you can use the `classy_enum_field` macro to create the enum field in a more shorthand way. 
+
+```ruby
+class AllowNilBreedDog
+  include Mongoid::Document
+  
+  classy_enum_field :breed, :allow_nil => true
+end
+```
+
+Enjoy :)
+
+PS: See the `spec/adapter_spec.rb` file for more details.
+
 ## Copyright
 
 Copyright (c) 2012 [Peter Brown](https://github.com/beerlington). See LICENSE for details.

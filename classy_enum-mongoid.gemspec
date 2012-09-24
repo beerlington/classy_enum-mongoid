@@ -16,5 +16,5 @@ Gem::Specification.new do |gem|
   gem.version       = ClassyEnum::Mongoid::VERSION
   gem.add_dependency('classy_enum', '>= 3.0.1')
   gem.add_dependency('mongoid', '>= 2.1')
-  gem.add_development_dependency('rspec-rails', '~> 2.11.0')
+  gem.add_development_dependency('rspec-rails', '>= 2.11.0')
 end
